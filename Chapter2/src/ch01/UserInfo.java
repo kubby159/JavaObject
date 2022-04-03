@@ -7,4 +7,5 @@ public class UserInfo {
 	String userName;
 	String address;
 	int phoneNumber;
+
 }
