@@ -2,21 +2,21 @@ package ch18;
 
 public class Car {
 
-	private static int carSerial = 10000;
-	private int carId;
+	private static int serialNum = 10000;
+	public int carNum;
 
 	public Car() {
-		carSerial++;
-		carId = carSerial;
-
+		serialNum++;
+		carNum = serialNum;
 	}
 
 	public int getCarNum() {
-		return carId;
+		return carNum;
 	}
 
 	public void setCarNum(int carNum) {
-		this.carId = carNum;
+
+		this.carNum = carNum;
 	}
 
 }

@@ -2,13 +2,17 @@ package ch18;
 
 public class CarFactory {
 
-	private static CarFactory intance = new CarFactory();
+	private static CarFactory instance;
 
 	private CarFactory() {
 	}
 
 	public static CarFactory getIntance() {
-		return intance;
+		if (instance == null) {
+			instance = new CarFactory();
+
+		}
+		return instance;
 	}
 
 	public Car createCar() {
